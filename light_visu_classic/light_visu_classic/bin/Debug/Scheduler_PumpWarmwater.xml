@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<ArrayOfDayTime xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DayTime>
+    <Number>1</Number>
+    <IsStopTime>false</IsStopTime>
+    <Hour>3</Hour>
+    <Minute>3</Minute>
+    <Second>3</Second>
+    <Time>03:03:03</Time>
+  </DayTime>
+  <DayTime>
+    <Number>2</Number>
+    <IsStopTime>true</IsStopTime>
+    <Hour>4</Hour>
+    <Minute>4</Minute>
+    <Second>4</Second>
+    <Time>04:04:04</Time>
+  </DayTime>
+</ArrayOfDayTime>

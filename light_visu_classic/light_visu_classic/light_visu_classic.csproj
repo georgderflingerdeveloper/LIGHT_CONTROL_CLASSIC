@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3ED0E291-59AE-412B-A10B-CBFE2022C94E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>light_visu_classic</RootNamespace>
+    <AssemblyName>light_visu_classic</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>veröffentlichen\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging">
+      <HintPath>..\..\..\LIGHT_COMMON_SOURCES\COMMON_DLL\QUARTZ\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Core">
+      <HintPath>..\..\..\LIGHT_COMMON_SOURCES\COMMON_DLL\QUARTZ\Common.Logging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Phidget21.NET, Version=2.1.8.170, Culture=neutral, PublicKeyToken=c2b1f2a3594bce52, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\LIGHT_COMMON_SOURCES\COMMON_DLL\PHIDGETS\Phidget21.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="Quartz">
+      <HintPath>..\..\..\LIGHT_COMMON_SOURCES\COMMON_DLL\QUARTZ\Quartz.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\LIGHT\light\light\BASIC_CONTROL_LOGIC\hacontrols.cs">
+      <Link>hacontrols.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\LIGHT\light\light\HA_INFORMATION_COMPONENTS\PowerMeter.cs">
+      <Link>PowerMeter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\LIGHT\light\light\HA_INFORMATION_COMPONENTS\PowerMeterData.cs">
+      <Link>PowerMeterData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\LIGHT\light\light\HA_INFORMATION_COMPONENTS\WindowDoorsObserver.cs">
+      <Link>WindowDoorsObserver.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\LIGHT\light\light\HA_SERVICES\feed_home_scheduler.cs">
+      <Link>feed_home_scheduler.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\LIGHT\light\light\HA_SERVICES\home_scheduler.cs">
+      <Link>home_scheduler.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\LIGHT\light\light\HA_SERVICES\SchedulerApplicationSpecifics.cs">
+      <Link>SchedulerApplicationSpecifics.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\LIGHT_COMMON_SOURCES\HAIOInterface.cs">
+      <Link>HAIOInterface.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\LIGHT_COMMON_SOURCES\HAProtocoll.cs">
+      <Link>HAProtocoll.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\LIGHT_COMMON_SOURCES\home_hardconfig.cs">
+      <Link>home_hardconfig.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\LIGHT_COMMON_SOURCES\Services.cs">
+      <Link>Services.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\LIGHT_COMMON_SOURCES\tcpclient.cs">
+      <Link>tcpclient.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\LIGHT_COMMON_SOURCES\tcpserver.cs">
+      <Link>tcpserver.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\LIGHT_COMMON_SOURCES\udp_basic.cs">
+      <Link>udp_basic.cs</Link>
+    </Compile>
+    <Compile Include="FormAnteRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAnteRoom.Designer.cs">
+      <DependentUpon>FormAnteRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRoofRoomNorth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRoofRoomNorth.Designer.cs">
+      <DependentUpon>FormRoofRoomNorth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsServices.cs" />
+    <Compile Include="Form_AlarmSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_AlarmSystem.Designer.cs">
+      <DependentUpon>Form_AlarmSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_BathRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_BathRoom.Designer.cs">
+      <DependentUpon>Form_BathRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_GroupControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_GroupControl.Designer.cs">
+      <DependentUpon>Form_GroupControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Kitchen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Kitchen.Designer.cs">
+      <DependentUpon>Form_Kitchen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_LivingRoomEast.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_LivingRoomEast.Designer.cs">
+      <DependentUpon>Form_LivingRoomEast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_LivingRoomWest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_LivingRoomWest.Designer.cs">
+      <DependentUpon>Form_LivingRoomWest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Networking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Networking.Designer.cs">
+      <DependentUpon>Form_Networking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Outside.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Outside.Designer.cs">
+      <DependentUpon>Form_Outside.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_PowerMeter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_PowerMeter.Designer.cs">
+      <DependentUpon>Form_PowerMeter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_RoofRoomNorth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_RoofRoomNorth.Designer.cs">
+      <DependentUpon>Form_RoofRoomNorth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Scheduler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Scheduler.Designer.cs">
+      <DependentUpon>Form_Scheduler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HEATING_SYSTEM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HEATING_SYSTEM.Designer.cs">
+      <DependentUpon>HEATING_SYSTEM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="House.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="House.Designer.cs">
+      <DependentUpon>House.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kitchen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kitchen.Designer.cs">
+      <DependentUpon>Kitchen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="light_visu_hardconfig.cs" />
+    <Compile Include="MyHome.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RoofGallery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoofGallery.Designer.cs">
+      <DependentUpon>RoofGallery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="schedulerhelpers.cs" />
+    <Compile Include="SERVICE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SERVICE.Designer.cs">
+      <DependentUpon>SERVICE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SleepingRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SleepingRoom.Designer.cs">
+      <DependentUpon>SleepingRoom.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormAnteRoom.resx">
+      <DependentUpon>FormAnteRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRoofRoomNorth.resx">
+      <DependentUpon>FormRoofRoomNorth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_AlarmSystem.resx">
+      <DependentUpon>Form_AlarmSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_BathRoom.resx">
+      <DependentUpon>Form_BathRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_GroupControl.resx">
+      <DependentUpon>Form_GroupControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Kitchen.resx">
+      <DependentUpon>Form_Kitchen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_LivingRoomEast.resx">
+      <DependentUpon>Form_LivingRoomEast.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_LivingRoomWest.resx">
+      <DependentUpon>Form_LivingRoomWest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Networking.resx">
+      <DependentUpon>Form_Networking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Outside.resx">
+      <DependentUpon>Form_Outside.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_PowerMeter.resx">
+      <DependentUpon>Form_PowerMeter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_RoofRoomNorth.resx">
+      <DependentUpon>Form_RoofRoomNorth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Scheduler.resx">
+      <DependentUpon>Form_Scheduler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HEATING_SYSTEM.af.resx">
+      <DependentUpon>HEATING_SYSTEM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HEATING_SYSTEM.de.resx">
+      <DependentUpon>HEATING_SYSTEM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HEATING_SYSTEM.resx">
+      <DependentUpon>HEATING_SYSTEM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="House.resx">
+      <DependentUpon>House.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kitchen.resx">
+      <DependentUpon>Kitchen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoofGallery.resx">
+      <DependentUpon>RoofGallery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SERVICE.resx">
+      <DependentUpon>SERVICE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SleepingRoom.resx">
+      <DependentUpon>SleepingRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SYMBOLS\window_open_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SYMBOLS\window_closed_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SYMBOLS\door_open_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SYMBOLS\group_control_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SYMBOLS\dryer_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SYMBOLS\heizkreislauf_1_transparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SYMBOLS\icon_alarm_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SYMBOLS\icon_anteroom_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SYMBOLS\icon_anteroom_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SYMBOLS\window_roof_closed_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SYMBOLS\window_roof_open_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SYMBOLS\spot_floor_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SYMBOLS\clock_active.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

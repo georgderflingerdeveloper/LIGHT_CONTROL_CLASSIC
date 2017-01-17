@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<ArrayOfDayTime xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DayTime>
+    <Number>1</Number>
+    <IsStopTime>false</IsStopTime>
+    <Hour>1</Hour>
+    <Minute>1</Minute>
+    <Second>1</Second>
+    <WhichComandedTime>StartTime</WhichComandedTime>
+    <Time>01:01:01</Time>
+    <Days />
+    <Comand>Idle</Comand>
+    <SchedulerJobID>1</SchedulerJobID>
+  </DayTime>
+  <DayTime>
+    <Number>5</Number>
+    <IsStopTime>true</IsStopTime>
+    <Hour>2</Hour>
+    <Minute>2</Minute>
+    <Second>2</Second>
+    <WhichComandedTime>StopTime</WhichComandedTime>
+    <Time>02:02:02</Time>
+    <Days>FromNow</Days>
+    <Comand>Stop</Comand>
+    <SchedulerJobID>1</SchedulerJobID>
+  </DayTime>
+</ArrayOfDayTime>

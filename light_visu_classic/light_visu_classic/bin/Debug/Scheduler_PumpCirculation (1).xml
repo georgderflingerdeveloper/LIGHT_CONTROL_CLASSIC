@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<ArrayOfDayTime xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DayTime>
+    <Number>1</Number>
+    <IsStopTime>false</IsStopTime>
+    <Hour>0</Hour>
+    <Minute>0</Minute>
+    <Second>0</Second>
+  </DayTime>
+</ArrayOfDayTime>
