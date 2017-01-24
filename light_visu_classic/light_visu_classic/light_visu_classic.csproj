@@ -89,7 +89,7 @@
       <Link>WindowDoorsObserver.cs</Link>
     </Compile>
     <Compile Include="..\..\..\LIGHT\light\light\HA_SERVICES\feed_home_scheduler.cs">
-      <Link>feed_home_scheduler.cs</Link>
+      <Link>SERVICES\SCHEDULER\feed_home_scheduler.cs</Link>
     </Compile>
     <Compile Include="..\..\..\LIGHT\light\light\HA_SERVICES\home_scheduler.cs">
       <Link>home_scheduler.cs</Link>
@@ -104,19 +104,19 @@
       <Link>HAProtocoll.cs</Link>
     </Compile>
     <Compile Include="..\..\..\LIGHT_COMMON_SOURCES\home_hardconfig.cs">
-      <Link>home_hardconfig.cs</Link>
+      <Link>COMMON_USED_SOURCES\HARDCONFIG\home_hardconfig.cs</Link>
     </Compile>
     <Compile Include="..\..\..\LIGHT_COMMON_SOURCES\Services.cs">
       <Link>Services.cs</Link>
     </Compile>
     <Compile Include="..\..\..\LIGHT_COMMON_SOURCES\tcpclient.cs">
-      <Link>tcpclient.cs</Link>
+      <Link>COMMON_USED_SOURCES\COMMUNICATION\tcpclient.cs</Link>
     </Compile>
     <Compile Include="..\..\..\LIGHT_COMMON_SOURCES\tcpserver.cs">
-      <Link>tcpserver.cs</Link>
+      <Link>COMMON_USED_SOURCES\COMMUNICATION\tcpserver.cs</Link>
     </Compile>
     <Compile Include="..\..\..\LIGHT_COMMON_SOURCES\udp_basic.cs">
-      <Link>udp_basic.cs</Link>
+      <Link>COMMON_USED_SOURCES\COMMUNICATION\udp_basic.cs</Link>
     </Compile>
     <Compile Include="FormAnteRoom.cs">
       <SubType>Form</SubType>

@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using Communication.UDP;
 
 namespace light_visu_classic
 {
@@ -23,6 +17,11 @@ namespace light_visu_classic
         {
             Form fPowerMeter = PowerMeter as Form;
             FormControl.ShowAligned( ref fPowerMeter, Devices.NamesGerman.PowerMeter );
+        }
+
+        private void buttonLightGroupKitchenOn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
