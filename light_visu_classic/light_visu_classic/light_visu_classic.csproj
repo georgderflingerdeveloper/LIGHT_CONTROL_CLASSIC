@@ -77,37 +77,37 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\..\..\LIGHT\light\light\BASIC_CONTROL_LOGIC\hacontrols.cs">
-      <Link>hacontrols.cs</Link>
+      <Link>HA_CONTROLS\hacontrols.cs</Link>
     </Compile>
     <Compile Include="..\..\..\LIGHT\light\light\HA_INFORMATION_COMPONENTS\PowerMeter.cs">
-      <Link>PowerMeter.cs</Link>
+      <Link>ENERGY\PowerMeter.cs</Link>
     </Compile>
     <Compile Include="..\..\..\LIGHT\light\light\HA_INFORMATION_COMPONENTS\PowerMeterData.cs">
-      <Link>PowerMeterData.cs</Link>
+      <Link>ENERGY\PowerMeterData.cs</Link>
     </Compile>
     <Compile Include="..\..\..\LIGHT\light\light\HA_INFORMATION_COMPONENTS\WindowDoorsObserver.cs">
-      <Link>WindowDoorsObserver.cs</Link>
+      <Link>COMMON_USED_SOURCES\OBSERVER\WindowDoorsObserver.cs</Link>
     </Compile>
     <Compile Include="..\..\..\LIGHT\light\light\HA_SERVICES\feed_home_scheduler.cs">
       <Link>SERVICES\SCHEDULER\feed_home_scheduler.cs</Link>
     </Compile>
     <Compile Include="..\..\..\LIGHT\light\light\HA_SERVICES\home_scheduler.cs">
-      <Link>home_scheduler.cs</Link>
+      <Link>SERVICES\SCHEDULER\home_scheduler.cs</Link>
     </Compile>
     <Compile Include="..\..\..\LIGHT\light\light\HA_SERVICES\SchedulerApplicationSpecifics.cs">
-      <Link>SchedulerApplicationSpecifics.cs</Link>
+      <Link>SERVICES\SCHEDULER\SchedulerApplicationSpecifics.cs</Link>
     </Compile>
     <Compile Include="..\..\..\LIGHT_COMMON_SOURCES\HAIOInterface.cs">
-      <Link>HAIOInterface.cs</Link>
+      <Link>SERVICES\HAIOInterface.cs</Link>
     </Compile>
     <Compile Include="..\..\..\LIGHT_COMMON_SOURCES\HAProtocoll.cs">
-      <Link>HAProtocoll.cs</Link>
+      <Link>COMMON_USED_SOURCES\PROTOCOLL\HAProtocoll.cs</Link>
     </Compile>
     <Compile Include="..\..\..\LIGHT_COMMON_SOURCES\home_hardconfig.cs">
       <Link>COMMON_USED_SOURCES\HARDCONFIG\home_hardconfig.cs</Link>
     </Compile>
     <Compile Include="..\..\..\LIGHT_COMMON_SOURCES\Services.cs">
-      <Link>Services.cs</Link>
+      <Link>SERVICES\Services.cs</Link>
     </Compile>
     <Compile Include="..\..\..\LIGHT_COMMON_SOURCES\tcpclient.cs">
       <Link>COMMON_USED_SOURCES\COMMUNICATION\tcpclient.cs</Link>
@@ -215,7 +215,7 @@
     <Compile Include="Kitchen.Designer.cs">
       <DependentUpon>Kitchen.cs</DependentUpon>
     </Compile>
-    <Compile Include="light_visu_hardconfig.cs" />
+    <Compile Include="HARDCONFIG\light_visu_hardconfig.cs" />
     <Compile Include="MyHome.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -229,7 +229,7 @@
     <Compile Include="RoofGallery.Designer.cs">
       <DependentUpon>RoofGallery.cs</DependentUpon>
     </Compile>
-    <Compile Include="schedulerhelpers.cs" />
+    <Compile Include="SERVICES\SCHEDULER\schedulerhelpers.cs" />
     <Compile Include="SERVICE.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -386,6 +386,7 @@
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

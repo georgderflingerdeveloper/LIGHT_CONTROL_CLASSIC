@@ -88,3 +88,4 @@ C:\PROJECT\LIGHT_CONTROL_CLASSIC\light_visu_classic\light_visu_classic\obj\Debug
 C:\PROJECT\LIGHT_CONTROL_CLASSIC\light_visu_classic\light_visu_classic\obj\Debug\light_visu_classic.Form_PowerMeter.resources
 C:\PROJECT\LIGHT_CONTROL_CLASSIC\light_visu_classic\light_visu_classic\bin\Debug\Phidget21.NET.dll
 C:\PROJECT\LIGHT_CONTROL_CLASSIC\light_visu_classic\light_visu_classic\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\PROJECT\LIGHT_CONTROL_CLASSIC\light_visu_classic\light_visu_classic\obj\Debug\light_visu_classic.csprojResolveAssemblyReference.cache
