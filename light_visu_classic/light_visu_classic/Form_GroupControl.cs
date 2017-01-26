@@ -24,7 +24,12 @@ namespace light_visu_classic
 
         private void buttonLightGroupKitchenOn_Click(object sender, EventArgs e)
         {
-            CommandoSender?.SendString( ComandoString.TURN_ALL_LIGHTS_ON );
+            CommandoSender?.SendString( ComandoString.TURN_ALL_KITCHEN_LIGHTS_ON );
+        }
+
+        private void buttonLightGroupKitchenOff_Click(object sender, EventArgs e)
+        {
+            CommandoSender?.SendString( ComandoString.TURN_ALL_KITCHEN_LIGHTS_OFF );
         }
     }
 }

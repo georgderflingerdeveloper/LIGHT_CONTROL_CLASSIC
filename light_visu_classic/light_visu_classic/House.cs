@@ -308,11 +308,7 @@ namespace light_visu_classic
 
         void Timer_UDP_InviteClients_Tick( object sender, EventArgs e )
         {
-            if( UDP_InviteClients == null )
-            {
-                return;
-            }
-            UDP_InviteClients.SendString( InfoString.RequestForClientConnection );
+            UDP_InviteClients?.SendString( InfoString.RequestForClientConnection );
         }
 
         void Server_MessageReceivedFromClient( string receivedmessage )

@@ -42,7 +42,7 @@
             this.bPowerMeter.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bPowerMeter.ForeColor = System.Drawing.Color.White;
             this.bPowerMeter.Location = new System.Drawing.Point(33, 30);
-            this.bPowerMeter.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bPowerMeter.Margin = new System.Windows.Forms.Padding(2);
             this.bPowerMeter.Name = "bPowerMeter";
             this.bPowerMeter.Size = new System.Drawing.Size(209, 79);
             this.bPowerMeter.TabIndex = 0;
@@ -69,6 +69,7 @@
             this.buttonLightGroupKitchenOff.TabIndex = 2;
             this.buttonLightGroupKitchenOff.Text = "LICHT Küche AUS";
             this.buttonLightGroupKitchenOff.UseVisualStyleBackColor = true;
+            this.buttonLightGroupKitchenOff.Click += new System.EventHandler(this.buttonLightGroupKitchenOff_Click);
             // 
             // Form_GroupControl
             // 
@@ -78,7 +79,7 @@
             this.Controls.Add(this.buttonLightGroupKitchenOff);
             this.Controls.Add(this.buttonLightGroupKitchenOn);
             this.Controls.Add(this.bPowerMeter);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form_GroupControl";
             this.Text = "Form_GroupControl";
             this.ResumeLayout(false);
