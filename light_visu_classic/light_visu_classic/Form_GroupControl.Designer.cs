@@ -32,6 +32,8 @@
             this.bPowerMeter = new System.Windows.Forms.Button();
             this.buttonLightGroupKitchenOn = new System.Windows.Forms.Button();
             this.buttonLightGroupKitchenOff = new System.Windows.Forms.Button();
+            this.buttonGalleryDownOff = new System.Windows.Forms.Button();
+            this.buttonGalleryDownOn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // bPowerMeter
@@ -44,7 +46,7 @@
             this.bPowerMeter.Location = new System.Drawing.Point(33, 30);
             this.bPowerMeter.Margin = new System.Windows.Forms.Padding(2);
             this.bPowerMeter.Name = "bPowerMeter";
-            this.bPowerMeter.Size = new System.Drawing.Size(209, 79);
+            this.bPowerMeter.Size = new System.Drawing.Size(186, 79);
             this.bPowerMeter.TabIndex = 0;
             this.bPowerMeter.Text = "KWh";
             this.bPowerMeter.TextAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -63,7 +65,7 @@
             // 
             // buttonLightGroupKitchenOff
             // 
-            this.buttonLightGroupKitchenOff.Location = new System.Drawing.Point(152, 131);
+            this.buttonLightGroupKitchenOff.Location = new System.Drawing.Point(129, 131);
             this.buttonLightGroupKitchenOff.Name = "buttonLightGroupKitchenOff";
             this.buttonLightGroupKitchenOff.Size = new System.Drawing.Size(90, 97);
             this.buttonLightGroupKitchenOff.TabIndex = 2;
@@ -71,11 +73,33 @@
             this.buttonLightGroupKitchenOff.UseVisualStyleBackColor = true;
             this.buttonLightGroupKitchenOff.Click += new System.EventHandler(this.buttonLightGroupKitchenOff_Click);
             // 
+            // buttonGalleryDownOff
+            // 
+            this.buttonGalleryDownOff.Location = new System.Drawing.Point(129, 234);
+            this.buttonGalleryDownOff.Name = "buttonGalleryDownOff";
+            this.buttonGalleryDownOff.Size = new System.Drawing.Size(90, 97);
+            this.buttonGalleryDownOff.TabIndex = 4;
+            this.buttonGalleryDownOff.Text = "LICHT Gallerie unten AUS";
+            this.buttonGalleryDownOff.UseVisualStyleBackColor = true;
+            this.buttonGalleryDownOff.Click += new System.EventHandler(this.buttonGalleryDownOff_Click);
+            // 
+            // buttonGalleryDownOn
+            // 
+            this.buttonGalleryDownOn.Location = new System.Drawing.Point(33, 234);
+            this.buttonGalleryDownOn.Name = "buttonGalleryDownOn";
+            this.buttonGalleryDownOn.Size = new System.Drawing.Size(90, 97);
+            this.buttonGalleryDownOn.TabIndex = 3;
+            this.buttonGalleryDownOn.Text = "LICHT Gallerie unten EIN";
+            this.buttonGalleryDownOn.UseVisualStyleBackColor = true;
+            this.buttonGalleryDownOn.Click += new System.EventHandler(this.buttonGalleryDownOn_Click);
+            // 
             // Form_GroupControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(762, 462);
+            this.Controls.Add(this.buttonGalleryDownOff);
+            this.Controls.Add(this.buttonGalleryDownOn);
             this.Controls.Add(this.buttonLightGroupKitchenOff);
             this.Controls.Add(this.buttonLightGroupKitchenOn);
             this.Controls.Add(this.bPowerMeter);
@@ -91,5 +115,7 @@
         private System.Windows.Forms.Button bPowerMeter;
         private System.Windows.Forms.Button buttonLightGroupKitchenOn;
         private System.Windows.Forms.Button buttonLightGroupKitchenOff;
+        private System.Windows.Forms.Button buttonGalleryDownOff;
+        private System.Windows.Forms.Button buttonGalleryDownOn;
     }
 }

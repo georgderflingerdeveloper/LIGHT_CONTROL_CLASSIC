@@ -9,11 +9,13 @@ namespace light_visu_classic
     {
         Form_PowerMeter PowerMeter = new Form_PowerMeter();
         UdpSend CommandoSender;
+        UdpSend CommandoSenderEast;
 
         public Form_GroupControl()
         {
             InitializeComponent();
-            CommandoSender = new UdpSend( "127.0.0.1", IPConfiguration.Port.PORT_LIGHT_CONTROL_COMMON );
+            CommandoSender     = new UdpSend( "127.0.0.1", IPConfiguration.Port.PORT_LIGHT_CONTROL_COMMON );
+            CommandoSenderEast = new UdpSend( "127.0.0.1", IPConfiguration.Port.PORT_UDP_LIVINGROOM_EAST );
         }
 
         private void bPowerMeter_Click( object sender, EventArgs e )
@@ -30,6 +32,16 @@ namespace light_visu_classic
         private void buttonLightGroupKitchenOff_Click(object sender, EventArgs e)
         {
             CommandoSender?.SendString( ComandoString.TURN_ALL_KITCHEN_LIGHTS_OFF );
+        }
+
+        private void buttonGalleryDownOn_Click(object sender, EventArgs e)
+        {
+            CommandoSenderEast?.SendString( ComandoString.TURN_GALLERY_DOWN_ON );
+        }
+
+        private void buttonGalleryDownOff_Click(object sender, EventArgs e)
+        {
+            CommandoSenderEast?.SendString( ComandoString.TURN_GALLERY_DOWN_OFF );
         }
     }
 }
