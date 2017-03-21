@@ -34,9 +34,6 @@ namespace light_visu_classic
         Timer               Timer_UDP_InviteClients;
         decimal             TransactionNumberSentTo_CENTER          = 0;
         decimal             TransactionNumberSentTo_LIVINGROOM_EAST = 0;
-        //decimal             TransactionNumberSentTo_LIVINGROOM_WEST = 0;
-        //decimal             TransactionNumberSentTo_SLEEPINGROOM    = 0;
-        //decimal             TransactionNumberSentTo_ANTEROOM        = 0;
 
         public delegate void IO_MessageFromKitchenLivingRoom( object sender, IOState state );
         public event         IO_MessageFromKitchenLivingRoom IOMessageFromKitchenLivingRoom_;
